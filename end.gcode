@@ -1,3 +1,4 @@
+; ============ CUSTOM END G-CODE ============
 SET_SKEW CLEAR=1
 G91 ;Relative positioning
 G1 E-2 F2700 ;Retract a bit
@@ -12,3 +13,4 @@ M104 S0 ;Turn-off hotend
 M140 S0 ;Turn-off bed
 
 M84 X Y E ;Disable all steppers but Z
+; ============ END OF CUSTOM END G-CODE ============

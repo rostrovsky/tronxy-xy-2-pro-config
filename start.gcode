@@ -1,4 +1,5 @@
-; Tronxy XY 2 Pro Custom Start G-code
+; ============ CUSTOM START G-CODE ============
+; Tronxy XY-2 Pro Custom Start G-code
 G92 E0 ; Reset Extruder
 G28 ; Home all axes
 G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed
@@ -10,4 +11,6 @@ G92 E0 ; Reset Extruder
 G1 Z2.0 F3000 ; Move Z Axis up little to prevent scratching of Heat Bed
 G1 X5 Y20 Z0.3 F5000.0 ; Move over to prevent blob squish
 SKEW_PROFILE LOAD=my_skew_profile
+BED_MESH_PROFILE LOAD=default
 ;SKEW_PROFILE LOAD=esun_pla_plus
+; ============ END OF CUSTOM START G-CODE ============
